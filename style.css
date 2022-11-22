@@ -467,7 +467,7 @@ a[data-lightbox]:hover img {
 h1,h2,h3,h4,h5,h6,p,label,.btn,a {
     font-family:"helvetica";
     font-weight:400;
-    color:#575757!important
+    color:rgba(0, 0, 0, .5);
 }
 .container {
     max-width:1000px
@@ -488,8 +488,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a {
     margin:auto auto auto auto
 }
 p {
-    font-size:11px
+    font-size:1.1em;
 }
+
+p.adress {
+    font-size: 14px;
+   
+}
+
 .tight-width-whitespace {
     max-width:600px;
     margin:auto auto auto auto
@@ -544,6 +550,9 @@ h4 {
 .portfolio-row {
     margin-bottom:44px;
     margin-top:50px
+}
+img.img-responsive.portfolio-thumb {
+    width: 100%;
 }
 .avatar {
     box-shadow:0 4px 9px rgba(0,0,0,.3)
@@ -795,4 +804,17 @@ h4 {
 
 img.logo-panthere {
     height: 40px;
+}
+
+@media (max-width:767px) {
+    img.title {
+    width: 100%;
+}}
+
+.col-sm-4 {
+    margin-top: 2rem;
+}
+
+.container.bloc-lg {
+    padding-top: 3rem;
 }
