@@ -467,7 +467,7 @@ a[data-lightbox]:hover img {
 h1,h2,h3,h4,h5,h6,p,label,.btn,a {
     font-family:"helvetica";
     font-weight:400;
-    color:rgba(0, 0, 0, .5);
+    color:#474141;
 }
 .container {
     max-width:1000px
