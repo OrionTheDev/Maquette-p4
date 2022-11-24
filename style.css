@@ -172,6 +172,9 @@ div#bloc-7 {
     padding-right:0;
     padding-left:0
 }
+.row-link-footer{
+    padding-left:35px;
+}
 #bloc-1-hero h1 {
     font-size:32px
 }
@@ -551,9 +554,7 @@ h4 {
     margin-bottom:44px;
     margin-top:50px
 }
-img.img-responsive.portfolio-thumb {
-    width: 100%;
-}
+
 .avatar {
     box-shadow:0 4px 9px rgba(0,0,0,.3)
 }
@@ -602,7 +603,7 @@ img.img-responsive.portfolio-thumb {
     border-color:#364577!important
 }
 .bg-dots-bg {
-    background-image:url(img/dots-bg.png)
+    background-image:url(img/dots-bg.webp)
 }
 .bg-lines-h2-bg {
     background-image:url(img/lines-h2-bg.webp)
@@ -804,6 +805,7 @@ img.img-responsive.portfolio-thumb {
 
 img.logo-panthere {
     height: 40px;
+    width: 217px;
 }
 
 @media (max-width:767px) {
@@ -813,7 +815,6 @@ img.logo-panthere {
 
 .col-sm-4 {
     margin-top: 2rem;
-    margin-left: 25px;
 }
 
 .container.bloc-lg {
@@ -823,4 +824,9 @@ img.logo-panthere {
     margin-left: 25px;
     color:#1D1B1B;
     font-weight: 400;
+}
+
+img.center-block.image-resize-mode{
+    width: 100px;
+    height: auto;
 }
