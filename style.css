@@ -813,8 +813,14 @@ img.logo-panthere {
 
 .col-sm-4 {
     margin-top: 2rem;
+    margin-left: 25px;
 }
 
 .container.bloc-lg {
     padding-top: 3rem;
+}
+.title-partner {
+    margin-left: 25px;
+    color:#4a4848;
+    font-weight: 400;
 }
