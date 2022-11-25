@@ -363,7 +363,7 @@ button {
     @media (max-width:768px){ 
         .form-control
     {
-        width: 380px;
+        width: 350px;
 }
 .row 
 {
@@ -497,7 +497,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a {
     max-width:1000px
 }
 .hero-bloc-text {
-    font-size:38px
+    font-size:36px
 }
 .hero-bloc-text-sub {
     font-size:36px
@@ -512,7 +512,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a {
     margin:auto auto auto auto
 }
 p {
-    font-size:1.1em;
+    font-size:1em;
 }
 
 p.adress {
@@ -606,8 +606,15 @@ h4 {
 .btn-atomic-tangerine {
     background:#F3976C;
     color:rgb(60, 60, 60)!important;
-    width: 380px;
+    width: 180px;
 }
+@media (max-width:768px) {
+    .button-submit {
+        display: flex;
+        justify-content: center;
+    }
+   }
+
 .btn-atomic-tangerine:hover {
     background:#c27956!important;
     color:#FFFFFF!important
@@ -658,12 +665,12 @@ h4 {
         max-width:100%
     }
 }
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
+@media only screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape) {
     .b-parallax {
         background-attachment:scroll
     }
 }
-@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:1.5) {
+@media only screen and (min-width:1024px) and (max-width:1366px) and (-webkit-min-device-pixel-ratio:1.5) {
     .b-parallax {
         background-attachment:scroll
     }
@@ -680,8 +687,8 @@ h4 {
         position:relative
     }
     .bloc {
-        padding-left:constant(safe-area-inset-left);
-        padding-right:constant(safe-area-inset-right)
+        --safe-area-inset-left: env(safe-area-inset-left);
+        --safe-area-inset-right: env(safe-area-inset-right);
     }
     .bloc-group,.bloc-group .bloc {
         display:block;
@@ -689,8 +696,8 @@ h4 {
     }
     .bloc-fill-screen .fill-bloc-top-edge,.bloc-fill-screen .fill-bloc-bottom-edge {
         padding:0 20px;
-        padding-left:constant(safe-area-inset-left);
-        padding-right:constant(safe-area-inset-right)
+        --safe-area-inset-left: env(safe-area-inset-left);
+        --safe-area-inset-right: env(safe-area-inset-right);
     }
 }
 @media (max-width:767px) {
@@ -863,3 +870,10 @@ img.img-responsive.portfolio-thumb{
     margin-left:15px;
     margin-bottom:2em;
 }
+@media (max-width:768px){
+    .contact-page{
+        margin-left:35px;
+
+    }
+}
+
